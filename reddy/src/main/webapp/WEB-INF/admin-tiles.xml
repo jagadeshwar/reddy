@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"> 
+<tiles-definitions>  
+   
+    <definition name="base.definition"  template="/WEB-INF/tiles/admin/layouts/commonLayout.jsp">  
+        <put-attribute name="title" value="Reddy Sangam" />  
+        
+        <put-attribute name="header" value="/WEB-INF/tiles/admin/layouts/commonHeader.jsp" />  
+        <put-attribute name="sideMenu" value="/WEB-INF/tiles/admin/layouts/commonSideLayout.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/tiles/admin/layouts/commonFooter.jsp" />  
+    </definition>  
+  
+    <definition name="adminDashboard" extends="base.definition">  
+        <put-attribute name="title" value="Administrator" />  
+        <put-attribute name="body" value="/WEB-INF/tiles/admin/layouts/dashboard.jsp" />  
+    </definition>  
+  
+</tiles-definitions>  
